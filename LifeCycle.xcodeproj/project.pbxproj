@@ -13,6 +13,9 @@
 		89D439DE25E1067D00252318 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D439DD25E1067D00252318 /* Preview Assets.xcassets */; };
 		89D439E025E1067D00252318 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D439DF25E1067D00252318 /* Persistence.swift */; };
 		89D439E325E1067D00252318 /* LifeCycle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89D439E125E1067D00252318 /* LifeCycle.xcdatamodeld */; };
+		89D439EC25E10CC600252318 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D439EB25E10CC600252318 /* SearchBar.swift */; };
+		89D439F325E119F800252318 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D439F225E119F800252318 /* MenuView.swift */; };
+		89D439F625E129ED00252318 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D439F525E129ED00252318 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		89D439DF25E1067D00252318 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		89D439E225E1067D00252318 /* LifeCycle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeCycle.xcdatamodel; sourceTree = "<group>"; };
 		89D439E425E1067D00252318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D439EB25E10CC600252318 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		89D439F225E119F800252318 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		89D439F525E129ED00252318 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				89D439D625E1067A00252318 /* LifeCycleApp.swift */,
 				89D439D825E1067A00252318 /* ContentView.swift */,
+				89D439EB25E10CC600252318 /* SearchBar.swift */,
+				89D439F225E119F800252318 /* MenuView.swift */,
+				89D439F525E129ED00252318 /* ListView.swift */,
 				89D439DA25E1067D00252318 /* Assets.xcassets */,
 				89D439DF25E1067D00252318 /* Persistence.swift */,
 				89D439E425E1067D00252318 /* Info.plist */,
@@ -145,7 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D439E025E1067D00252318 /* Persistence.swift in Sources */,
+				89D439F325E119F800252318 /* MenuView.swift in Sources */,
 				89D439D925E1067A00252318 /* ContentView.swift in Sources */,
+				89D439F625E129ED00252318 /* ListView.swift in Sources */,
+				89D439EC25E10CC600252318 /* SearchBar.swift in Sources */,
 				89D439E325E1067D00252318 /* LifeCycle.xcdatamodeld in Sources */,
 				89D439D725E1067A00252318 /* LifeCycleApp.swift in Sources */,
 			);

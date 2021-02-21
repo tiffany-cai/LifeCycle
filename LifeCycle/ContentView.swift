@@ -9,6 +9,66 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    @State var searchText: String = ""
+    
+    var body: some View {
+        VStack {
+            SearchBar(text: searchText)
+            
+            VStack (alignment: .center, spacing: 10) {
+
+                HStack(spacing: 10) {
+                    MenuView(image: "calendar.circle.fill", title:"Today", count: "1")
+                    MenuView(image: "clock.fill", title:"Upcoming", count: "2")
+                }
+                HStack(spacing: 10) {
+                    MenuView(image: "tray.circle.fill", title:"View All", count: "8")
+                    MenuView(image: "pencil.circle.fill", title:"Notes", count: "3")
+                }
+            }
+            
+            HStack {
+                Text("My Lists")
+                    .font(.title)
+                    .bold()
+                Spacer()
+            }.padding([.all], 8.0)
+            
+            VStack (spacing: 10) {
+                ListView(icon: "house.fill", title:"House", count: "5")
+                ListView(icon: "car.fill", title:"Car", count: "2")
+                ListView(icon: "bicycle", title:"Bike", count: "1")
+            }.cornerRadius(8.0)
+            
+            Spacer()
+            
+            HStack {
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                   // Image("plus.circle.fill")
+                    Text("Add List")
+                        .font(.body)
+                        .bold()
+                })
+            }.padding()
+            .background(Color.gray.opacity(0.1))
+            
+        }.padding()
+        
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+    
+    
+    /*
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -77,4 +137,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
-}
+}*/
+
